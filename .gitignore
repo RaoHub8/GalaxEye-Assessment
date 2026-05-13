@@ -1,0 +1,76 @@
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+site/
+
+# Virtual environments and local env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Test, lint, and coverage caches
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+
+# IDE and OS files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local datasets and compressed archives
+dataset/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Generated experiment outputs
+outputs/
+outputs_*/
+runs/
+logs/
+tensorboard/
+cache/
+*.log
+
+# Model checkpoints and prediction caches
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.npz
+*.npy
+
+# Notebook artifacts
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
