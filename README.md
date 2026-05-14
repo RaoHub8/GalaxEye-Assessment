@@ -98,9 +98,12 @@ Actual precision, recall, and MCC values will be populated by `scripts/evaluate.
 
 ## Model Weights
 
-Final checkpoint path: `outputs/best_model.pth`
+Final trained checkpoint:
 
-A public download link for the trained weights will be added once the model file is uploaded manually.
+https://drive.google.com/file/d/19OBeqPGsb3xkOgLdTqFSmIHKVTjJzjEX/view?usp=sharing
+
+Local repository path:
+outputs/best_model.pth
 
 ## Methodology Summary
 
