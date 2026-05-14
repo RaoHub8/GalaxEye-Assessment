@@ -52,13 +52,16 @@ dataset/
 *.7z
 
 # Generated experiment outputs
-outputs/
 outputs_*/
 runs/
 logs/
 tensorboard/
 cache/
 *.log
+
+# Allow tracking the repository outputs folder while still ignoring other output directories
+!outputs/
+!outputs/**
 
 # Model checkpoints and prediction caches
 *.pth

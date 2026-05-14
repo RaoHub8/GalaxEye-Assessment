@@ -1,0 +1,5 @@
+Variant,IoU,F1,Precision,Recall
+Baseline model,,,,
++ validity masking,,,,
++ change-aware sampling,,,,
++ postprocessing (current final),0.1416670492954976,0.24817576553028933,0.17351277690022415,0.43562732375883745

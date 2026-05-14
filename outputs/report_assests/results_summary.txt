@@ -1,0 +1,36 @@
+
+GalaxEye EO-SAR Change Detection - Robustness Refinement Summary
+================================================================
+
+Model        : Lightweight early-fusion U-Net
+Input        : EO RGB + SAR, modality-normalized separately
+Loss         : Masked focal + Dice
+Sampling     : Change-aware training patches (70% positive-biased)
+Inference    : Sliding window + geometric TTA
+Postprocess  : Remove connected components smaller than 24 pixels
+Threshold    : 0.70 chosen on validation F1
+
+Test metrics, invalid pixels excluded:
+  IoU              : 0.1417
+  F1 / Dice        : 0.2482
+  Precision        : 0.1735
+  Recall           : 0.4356
+  Accuracy         : 0.9205
+  Pred positive %  : 7.5576
+  Mean image F1    : 0.1826
+  Mean invalid %   : 10.8289
+  Test MCC         : 0.2400
+  Validation AP    : 0.7256
+  Validation MCC   : 0.6092
+
+Error profile:
+  TP: 944,129
+  FP: 4,497,136
+  FN: 1,223,157
+  TN: 65,332,616
+
+Conclusion:
+  The refinement keeps the original lightweight architecture and evaluation flow, while adding per-image SAR
+  normalization, Gaussian-weighted sliding-window blending, threshold selection, connected-component filtering,
+  and final invalid-region suppression. These changes target SAR train-test intensity shift, seam artifacts,
+  tiny edge activations, and invalid-border false positives.
