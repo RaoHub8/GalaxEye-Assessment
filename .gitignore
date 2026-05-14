@@ -65,6 +65,8 @@ cache/
 
 # Model checkpoints and prediction caches
 *.pth
+!outputs/*.pth
+!outputs/**/*.pth
 *.pt
 *.ckpt
 *.onnx
