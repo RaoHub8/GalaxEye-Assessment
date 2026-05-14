@@ -111,3 +111,10 @@ outputs/best_model.pth
 - Loss: Masked focal + Dice loss
 - Training: Change-aware crop sampling, data augmentation
 - Inference: Sliding-window with Gaussian blending, test-time augmentation, postprocessing with connected components
+
+## Note 
+
+The primary experimental workflow used during development is available in:
+notebooks/final_submission.ipynb
+
+The modular repository structure mirrors the same pipeline for cleaner organization and reproducibility.
